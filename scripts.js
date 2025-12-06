@@ -40,13 +40,15 @@ document.addEventListener('DOMContentLoaded', () => {
         renderNavbar: () => {
             const navbar = document.getElementById('navbar');
             navbar.innerHTML = `
-                <div class="nav-links">
-                    <a href="#about" onclick="UI.scrollTo('about', event)">About</a>
-                    <a href="#sections" onclick="UI.scrollTo('sections', event)">Skills</a>
-                    <a href="#gallery" onclick="UI.scrollTo('gallery', event)">Gallery</a>
-                    <a href="#contact" onclick="UI.scrollTo('contact', event)">Contact</a>
+                <div class="nav-center">
+                    <div class="nav-links">
+                        <a href="#about" onclick="UI.scrollTo('about', event)">About</a>
+                        <a href="#sections" onclick="UI.scrollTo('sections', event)">Skills</a>
+                        <a href="#gallery" onclick="UI.scrollTo('gallery', event)">Gallery</a>
+                        <a href="#contact" onclick="UI.scrollTo('contact', event)">Contact</a>
+                    </div>
+                    <div class="theme-switcher">🌙</div>
                 </div>
-                <div class="theme-switcher">🌙</div>
             `;
         },
 
