@@ -163,7 +163,7 @@ html:not(.dark) #navbar {
     border-radius: 10px;
     padding: 2rem;
     margin: 2rem 0;
-    width: 100vw;
+    width: 90vw;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
