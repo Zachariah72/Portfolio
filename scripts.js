@@ -55,7 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
         renderHero: (heroData) => {
             const hero = document.getElementById('hero');
             hero.innerHTML = `
-                <div class="hero-bg"></div>
+                <div class="hero-bg hero-bg1"></div>
+                <div class="hero-bg hero-bg2"></div>
                 <div class="overlay"></div>
                 <img src="assets/images/ChatGPT Image Dec 6, 2025, 08_21_24 PM.png" alt="" class="profile-pic">
                 <h1>Zachariah Nyatuga Manani</h1>
@@ -301,26 +302,58 @@ document.addEventListener('DOMContentLoaded', () => {
         },
 
         initHeroCarousel: () => {
-            const heroBg = document.querySelector('.hero-bg');
-            const images = [
-                'assets/images/1.jpg',
-                'assets/images/2.jpg',
-                'assets/images/3.jpg',
-                'assets/images/4.jpg'
+            const heroBg1 = document.querySelector('.hero-bg1');
+            const heroBg2 = document.querySelector('.hero-bg2');
+            const media = [
+                'assets/images/pexels-ivan-s-7621352.jpg',
+                'assets/images/pexels-kevin-ku-92347-577585.jpg',
+                'assets/images/pexels-pixabay-38519 (1).jpg',
+                'assets/images/pexels-pixabay-270408.jpg',
+                'assets/videos/2278095-hd_1920_1080_30fps.mp4',
+                'assets/videos/4549682-hd_1920_1080_30fps.mp4'
             ];
-            let currentImage = 0;
+            let currentMedia = 0;
+            let activeBg = heroBg1;
+            let inactiveBg = heroBg2;
 
-            function changeImage() {
-                heroBg.style.backgroundImage = `url(${images[currentImage]})`;
-                heroBg.classList.add('active');
-                setTimeout(() => {
-                    heroBg.classList.remove('active');
-                }, 1000); // Should match transition duration
-                currentImage = (currentImage + 1) % images.length;
+            function setMedia(bg, mediaUrl) {
+                if (mediaUrl.endsWith('.mp4')) {
+                    bg.innerHTML = `<video autoplay muted loop class="bg-video"><source src="${mediaUrl}" type="video/mp4"></video>`;
+                    bg.style.backgroundImage = '';
+                } else {
+                    bg.innerHTML = '';
+                    bg.style.backgroundImage = `url(${mediaUrl})`;
+                }
             }
 
-            setInterval(changeImage, 5000);
-            changeImage();
+            function changeMedia() {
+                // Set the inactive bg with next media
+                setMedia(inactiveBg, media[currentMedia]);
+                inactiveBg.style.opacity = '0';
+                inactiveBg.classList.add('active');
+
+                // Fade out active, fade in inactive
+                activeBg.style.transition = 'opacity 1s ease';
+                inactiveBg.style.transition = 'opacity 1s ease';
+                activeBg.style.opacity = '0';
+                inactiveBg.style.opacity = '1';
+
+                // Swap after transition
+                setTimeout(() => {
+                    activeBg.classList.remove('active');
+                    activeBg.style.opacity = '1';
+                    [activeBg, inactiveBg] = [inactiveBg, activeBg];
+                    currentMedia = (currentMedia + 1) % media.length;
+                }, 1000);
+            }
+
+            // Initial setup
+            setMedia(activeBg, media[0]);
+            activeBg.style.opacity = '1';
+            activeBg.classList.add('active');
+            inactiveBg.style.opacity = '0';
+
+            setInterval(changeMedia, 5000);
         },
 
         initAnimations: () => {
