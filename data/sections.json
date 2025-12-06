@@ -40,12 +40,7 @@
             "projects": []
         }
     ],
-    "gallery": [
-        "gallery/1.jpg",
-        "gallery/2.jpg",
-        "gallery/3.jpg",
-        "gallery/4.jpg"
-    ],
+    "gallery": [],
     "achievements": [
         "Fully Funded Scholarship - Masters in Software Development",
         "Multiple Certifications",
