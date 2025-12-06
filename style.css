@@ -75,6 +75,18 @@ h1, h2, h3, h4, h5, h6 {
     transition: 0.3s;
 }
 
+.hamburger.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
 html:not(.dark) #navbar {
     background: rgba(255, 255, 255, 0.8);
 }
@@ -430,8 +442,17 @@ html:not(.dark) #navbar {
         margin: 0.5rem 0;
     }
 
+    #hero {
+        height: 80vh;
+    }
+
     #hero h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
+    }
+
+    #hero .profile-pic {
+        width: 120px;
+        height: 120px;
     }
 
     #hero .typewriter-container {
@@ -439,10 +460,18 @@ html:not(.dark) #navbar {
     }
 
     #about blockquote {
-        width: 100vw;
-        left: 50%;
-        transform: translateX(-50%);
+        width: 90vw;
+        padding: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+
+    .cv-card {
         padding: 1rem;
+        max-width: 100%;
     }
 
     .section-grid {
