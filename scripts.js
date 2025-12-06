@@ -40,7 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
         renderNavbar: () => {
             const navbar = document.getElementById('navbar');
             navbar.innerHTML = `
-                <div class="logo" onclick="UI.scrollTo('hero')">Zachariah</div>
                 <div class="nav-links">
                     <a href="#about" onclick="UI.scrollTo('about', event)">About</a>
                     <a href="#sections" onclick="UI.scrollTo('sections', event)">Skills</a>
@@ -57,6 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="hero-bg"></div>
                 <div class="overlay"></div>
                 <img src="assets/images/profile.jpg" alt="Profile Picture" class="profile-pic">
+                <h1>Zachariah Nyatuga Manani</h1>
                 <div class="typewriter-container">
                     <span id="typewriter"></span>
                 </div>
