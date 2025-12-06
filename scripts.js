@@ -57,7 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="hero-bg"></div>
                 <div class="overlay"></div>
                 <img src="assets/images/profile.jpg" alt="Profile Picture" class="profile-pic">
-                <h1>Zachariah Nyatuga Manani</h1>
                 <div class="typewriter-container">
                     <span id="typewriter"></span>
                 </div>
