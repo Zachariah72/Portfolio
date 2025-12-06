@@ -1,0 +1,14 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Modern portfolio website",
+  "main": "index.html",
+  "scripts": {
+    "dev": "echo 'No dev script'",
+    "build": "echo 'No build needed'",
+    "start": "echo 'Static site'"
+  },
+  "keywords": ["portfolio", "web"],
+  "author": "Zachariah Manani",
+  "license": "MIT"
+}
