@@ -1,0 +1,65 @@
+{
+    "about": {
+        "title": "About Me",
+        "content": "I am a multidisciplinary innovator bridging technology, medicine, and design. Currently pursuing BSc. Dental Technology at Mount Kenya University while specializing in MERN Full Stack Development and Applied Data Science. As CEO of Eduf-Africa Freelance Hub, I build human-centered digital solutions that merge technical precision with creative thinking."
+    },
+    "sections": [
+        {
+            "id": "tech",
+            "title": "Technology",
+            "skills": [
+                "MATLAB", "Rust", "JavaScript", "Python", "PHP", "HTML5", "CSS3",
+                "React", "Next.js", "Vue.js", "Django", "Flask", "Flutter", "Streamlit", "TensorFlow",
+                "ICP", "Burn", "Tauri",
+                "MongoDB", "MySQL", "PostgreSQL",
+                "Docker", "Kubernetes", "AWS", "Azure", "Google Cloud", "IBM Cloud",
+                "Git", "GitHub", "VS Code", "Linux", "JIRA", "Confluence", "Apache Kafka", "Apache Spark", "QGIS", "Pandas", "Figma", "Excel"
+            ],
+            "certificates": [],
+            "projects": []
+        },
+        {
+            "id": "medicine",
+            "title": "Medicine",
+            "skills": [],
+            "certificates": [],
+            "projects": []
+        },
+        {
+            "id": "humanities",
+            "title": "Humanities",
+            "skills": [],
+            "certificates": [],
+            "projects": []
+        },
+        {
+            "id": "design",
+            "title": "Graphic Design",
+            "skills": [],
+            "certificates": [],
+            "projects": []
+        }
+    ],
+    "gallery": [
+        "gallery/1.jpg",
+        "gallery/2.jpg",
+        "gallery/3.jpg",
+        "gallery/4.jpg"
+    ],
+    "achievements": [
+        "Fully Funded Scholarship - Masters in Software Development",
+        "Multiple Certifications",
+        "Founder of Eduf-Africa",
+        "Tech, Medicine & Creative Projects"
+    ],
+    "cv": "cv.pdf",
+    "contact": {
+        "email": "zacmanani20@gmail.com",
+        "phone": "+254724301244",
+        "social": {
+            "linkedin": "#",
+            "github": "https://github.com/Zachariah72",
+            "twitter": "#"
+        }
+    }
+}
