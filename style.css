@@ -81,6 +81,15 @@ html:not(.dark) #navbar {
 
 #navbar .theme-switcher {
     cursor: pointer;
+    background: #003161;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+#navbar .theme-switcher:hover {
+    background: #004080;
 }
 
 /* Hero */
