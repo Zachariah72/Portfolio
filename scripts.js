@@ -249,13 +249,16 @@ document.addEventListener('DOMContentLoaded', () => {
                     const formData = new FormData();
                     formData.append('email', email);
 
-                    const response = await fetch('api/subscribe.php', {
+                    const response = await fetch('/api/subscribe', {
                         method: 'POST',
-                        body: formData
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ email })
                     });
 
-                    const result = await response.text();
-                    msgDiv.textContent = result;
+                    const result = await response.json();
+                    msgDiv.textContent = result.message;
                 } catch (error) {
                     msgDiv.textContent = 'Subscription failed. Please try again.';
                 }
