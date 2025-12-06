@@ -32,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
             UI.renderContact(data.contact);
             UI.renderFooter(data.contact);
             UI.initEventListeners();
-            UI.initThemeSwitcher();
             UI.initHeroCarousel();
             UI.initAnimations();
         },
@@ -47,7 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
                         <a href="#gallery" onclick="UI.scrollTo('gallery', event)">Gallery</a>
                         <a href="#contact" onclick="UI.scrollTo('contact', event)">Contact</a>
                     </div>
-                    <div class="theme-switcher">🌙</div>
                 </div>
             `;
         },
