@@ -46,6 +46,11 @@ document.addEventListener('DOMContentLoaded', () => {
                         <a href="#gallery" onclick="UI.scrollTo('gallery', event)">Gallery</a>
                         <a href="#contact" onclick="UI.scrollTo('contact', event)">Contact</a>
                     </div>
+                    <div class="hamburger" onclick="UI.toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             `;
         },
@@ -352,6 +357,11 @@ document.addEventListener('DOMContentLoaded', () => {
             inactiveBg.style.opacity = '0';
 
             setInterval(changeMedia, 5000);
+        },
+
+        toggleMenu: () => {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
         },
 
         initAnimations: () => {
