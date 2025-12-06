@@ -309,8 +309,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 'assets/images/pexels-kevin-ku-92347-577585.jpg',
                 'assets/images/pexels-pixabay-38519 (1).jpg',
                 'assets/images/pexels-pixabay-270408.jpg',
-                'assets/videos/2278095-hd_1920_1080_30fps.mp4',
-                'assets/videos/4549682-hd_1920_1080_30fps.mp4'
+                'assets/images/2278095-hd_1920_1080_30fps.mp4',
+                'assets/images/4549682-hd_1920_1080_30fps.mp4'
             ];
             let currentMedia = 0;
             let activeBg = heroBg1;
