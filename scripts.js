@@ -271,7 +271,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const themeSwitcher = document.querySelector('.theme-switcher');
             themeSwitcher.addEventListener('click', () => {
                 document.documentElement.classList.toggle('dark');
-                themeSwitcher.textContent = document.documentElement.classList.contains('dark') ? '☀️' : '🌙';
+                themeSwitcher.innerHTML = document.documentElement.classList.contains('dark') ? '<i class="fas fa-sun" style="color: #003161;"></i>' : '<i class="fas fa-moon" style="color: #003161;"></i>';
             });
         },
 
