@@ -133,9 +133,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 const sectionEl = document.createElement('div');
                 sectionEl.id = section.id;
                 sectionEl.className = 'container';
-                let skillsHTML = section.skills.length > 0 ? `<ul>${section.skills.map(skill => `<li><i class="${getSkillIcon(skill)}"></i> ${skill}</li>`).join('')}</ul>` : '<p>No skills listed.</p>';
-                let certHTML = section.certificates.length > 0 ? `<ul>${section.certificates.map(cert => `<li><a href="assets/certificates/${cert.file}" target="_blank">${cert.name}</a></li>`).join('')}</ul>` : '<p>Certificates will be displayed here.</p>';
-                let projHTML = section.projects.length > 0 ? `<ul>${section.projects.map(proj => `<li>${proj}</li>`).join('')}</ul>` : '<p>Projects will be displayed here.</p>';
+                let skillsHTML = section.skills.length > 0 ? `<ul>${section.skills.map(skill => `<li><i class="${getSkillIcon(skill)}"></i> ${skill}</li>`).join('')}</ul>` : '';
+                let certHTML = section.certificates.length > 0 ? `<ul>${section.certificates.map(cert => `<li><a href="assets/certificates/${cert.file}" target="_blank">${cert.name}</a></li>`).join('')}</ul>` : '';
+                let projHTML = section.projects.length > 0 ? `<ul>${section.projects.map(proj => `<li>${proj}</li>`).join('')}</ul>` : '';
 
                 sectionEl.innerHTML = `
                     <h2>${section.title}</h2>
