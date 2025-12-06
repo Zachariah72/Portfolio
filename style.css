@@ -117,9 +117,6 @@ html:not(.dark) #navbar {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background-image: url('assets/images/ChatGPT Image Dec 6, 2025, 08_21_24 PM.png');
-    background-size: cover;
-    background-position: center;
     margin-bottom: 1.5rem;
     border: 5px solid;
     animation: glow 10s infinite;

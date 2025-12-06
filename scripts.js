@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
             hero.innerHTML = `
                 <div class="hero-bg"></div>
                 <div class="overlay"></div>
-                <img src="assets/images/profile.jpg" alt="Profile Picture" class="profile-pic">
+                <img src="assets/images/ChatGPT Image Dec 6, 2025, 08_21_24 PM.png" alt="" class="profile-pic">
                 <h1>Zachariah Nyatuga Manani</h1>
                 <div class="typewriter-container">
                     <span id="typewriter"></span>
